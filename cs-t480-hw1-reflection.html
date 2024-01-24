@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CST - 480 - HW1 - Reflection</title>
+        <link rel="shortcut icon" type="image/png" href="drexel.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h2>HW 1 Reflection</h2>
+        <h3>Coding</h3>
+        <p> 
+            1.	About ~11 hours total throughout the week.  Most of the time was spent designing the API logic and debugging it. <br>
+            2.	I spent the majority of my time developing the RESTful API (~6 hours) with implementing and debugging. About ~3 hours reviewing what APIs are, how to implement them, and the difference between each of the different implementations (e.g. path params. vs query strings). Writing test cases took about ~2 hours. <br>
+            3.	Struggled the most with the API design, had to review the material using YouTube videos and documentation. <br>
+        </p>
+        <h3>TypeScript</h3>
+        <p> 
+            1.	For this HW, TypeScript didn't seem that impactful aside from the formatting and outputting of the res.status(someNumber).send({attribute: something}), as the book and author attributes and messages were strings rather than any other data type. Unsure of what issues it has helped me prevent. If any, it is just to reinforce the idea that my query is all string type. One issue with TypeScript is that it adds another compile step which can increase build times in larger projects (not present with this HW).  As with any modules/packages, TypeScript may be incompatible with other packages/modules and may have some configuration problems. <br>
+            2.	Since it was all string values that I worked with, I did not have much difficulty setting it up with the response and thus minimal difficulty (if anything, just having to format it). I wonder if there's anything in addition to the interface/type and enforcing variable types (e.g. var: string) in TypeScript, I don't have a strong understanding of the interface and type but I have a general idea so maybe more clarity on that and how they are used. <br>
+        </p>
+        <h3>Testing</h3>
+        <p> 
+            1.	The test case examples was sufficient in helping me get started on writing the test cases, how to handle the Axios errors and how to structure the test cases and thus became easier. It was somewhat rewarding. When writing the test cases, some may fail and others may pass, which is a result of the API logic that has issues and made me come around to address them or that I messed up the logic for the test. It definitely helped me look back on my code and what I should fix to consider these cases passing and positively affected development.<br>
+            2.	Yes, some of the test cases helped me figure out some of the incomplete implementation of the post and delete APIs for the author in which it was failing somewhere in the code due to the code. Others were conflicting error messages and responses that I have set up such as the res.status(400).send({message: something something}) for example and the message in the test case had to match that.<br>
+            3.	If I had to structure my tests differently in the future, then be more in-depth with my testing and for edge cases. Looking back, I was testing the functionality of the API rather than specific cases of TypeScript- this was partly due to the fact that all of the SQL columns were string. I learned how to write test cases in TypeScript and how it can help support development efforts. <br>
+
+        </p>
+
+    </body>
+   
+</html>
