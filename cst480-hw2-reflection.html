@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CST - 480 - HW2 - Reflection</title>
+        <link rel="shortcut icon" type="image/png" href="drexel.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h2>HW 2 Reflection</h2>
+        <h3>Design</h3>
+        <p> 
+            1.	I have not made any changes to the backend aside from adjusting the /api route from /book (and all other requests) to api/book. In terms of code optimization, I would definitely wrote my iterations different for my request querying which is currently nested if statements rather than a forEach(). One thing that I havee struggled with is iterating  <br>
+            2.	I have a few validations in place on the server-side, and also handled the expected errors such as invalid arguments using a try and catch statement. Client-side validations was minimal in which I heavily relied on the server. There are cases where I need to validate the information from the client side, specifically when using TypeScript to ensure that they are the expected types before being passed to the server-side onto the database tables which can cause issues with aggregating the data later on potentially. Or, from the client-side, validate whether any inputs are missing or not and return any expected errors while having the server-side check the expected types of the values before being inserted into the database. Essentially, both sides can be responsible for checking certain things to minimalize issues later on in the application. <br>
+        </p>
+        <h3>React</h3>
+        <p> 
+            1.  Manipulating the react components with states was a bit confusing at first since initially I was trying to manipulate the html directly which didn't exactly work, especially when trying to remove a child from an element such as a div. In terms of implementation, I struggled less than I thought since as the previous in-class assignments and the documentation that was provided on the homework page and the react page were sufficient in learning how react operated. The implementation took a little bit of understanding as I had to wrap my head around the use of states and how I would be planning to use it in my code as I haven't really worked with that concept too much before.  <br>
+            2.	I ended up using any for the types that I had to specify, particularly the try and catch(error) since it is an unknown type. TypeScript hasn't really helped me catch any bugs in particular, but it is quite strict on the types that are being checked and enforced.  The type that I was mainly checking, as mentioned previously, was the catch(error) which had type unknown so I had to enforce an any type on it to be able to pass the error into the block that block of code. In terms of manual annotation, I did make some on the backend, but minimal for the frontend which was to add the any for the catch(error). <br>
+        </p>
+        <h3>SPA versus MPA</h3>
+        <p> 
+            1. For a SPA front-end, it was more difficult to get it working and making sure that the files and react routing was implemented correctly rather than a MPA where we could have just implemented an href tag that directs to the specific file in question. I think the react router is more neat in how it is structured, but the href link for a MPA is simple, but I enjoyed configuring the react router more. I think the experience is great. Wasn't a huge learnign curve in implementing the react router and there was a tutorial was great in explaining how the implementation worked. <br>
+        </p>
+
+    </body>
+   
+</html>
