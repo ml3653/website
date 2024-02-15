@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CST - 480 - HW2 - Reflection</title>
+        <link rel="shortcut icon" type="image/png" href="drexel.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h2>HW 4 Reflection</h2>
+        <h3>UI</h3>
+        <p> 
+            1.  I think the hardest aspect of the login and authorization is getting the components to display when the user is logged in or not (via cookie). Nothing that I struggled with immensely, but using the cookie as a validation to ensure that the user could perform certain actions. <br>
+        </p>
+        <h3>Login Endpoint</h3>
+        <p> 
+            1.  Did not have any particular issues with the backend-side. I think the most difficult part was adding cookies and being able to consider all of the cases where an account could not be created or the user could not login. <br>
+        </p>
+        <h3>Security audit</h3>
+        <p> 
+            1.  For XSS mitigation, ensure all user inputs are validated and sanitized. <br>
+            2.  Use CSRF tokens and SameSite cookie attribute to prevent CSRF attacks. <br>
+            3.  Implement rate limiting either with a firewall or within the application code. <br>
+            4.  Set HTTP headers like CSP, X-Content-Type-Options, X-Frame-Options, and HSTS. <br>
+            5.  Access controls implemented both on the client-side (e.g., in the UI) and the server-side (e.g., in the backend logic and database queries) to prevent unauthorized access and data exposure. <br>
+        </p>
+
+    </body>
+   
+</html>
